@@ -1,8 +1,8 @@
 
-var user=require('./spec');
-var computers=user.computer
+var user = require('./spec');
+var computers = user.computer
 
-  var  y=1
+  var  y = 1
    
 
 var orderobject = function ordercomputer(ordernumber) {
