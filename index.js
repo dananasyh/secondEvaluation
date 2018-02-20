@@ -1,18 +1,26 @@
-var computers=[{
-    RAM:7,
-    HDD: 0,
-    Processor: 2,
-},{
-        RAM: 7,
-        HDD: 0,
-        Processor: 2,
-},
-    {
-        RAM: 7,
-        HDD: 0,
-        Processor: 2,
-    },];
-for(var key in computers )
-{
-    console.log("RAM:" + computers[key].RAM + "HDD" + computers[key].HDD + "Processor" + computers[key].Processor);
+
+var user=require('./spec');
+var computers=user.computer
+
+  var  y=1
+   
+
+var orderobject = function ordercomputer(ordernumber) {
+   console.log("customer order:",ordernumber);
+
+
+    delivercomputer(function () {
+        console.log("delivered "+ y  +"computer:",ordernumber );
+
+    });
 }
+function delivercomputer(callback) {
+    setTimeout(callback, 5000);
+}
+
+orderobject(computers[0]);
+orderobject(computers[1]);
+orderobject(computers[2]);
+
+
+
