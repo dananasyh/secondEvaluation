@@ -10,7 +10,7 @@ var orderobject = function ordercomputer(ordernumber) {
 
 
     delivercomputer(function () {
-        console.log("delivered "+ y  +"computer:",ordernumber );
+        console.log("delivered "+ y  +"computer with:",ordernumber );
 
     });
 }
